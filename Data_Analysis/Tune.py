@@ -11,7 +11,7 @@ from sklearn.model_selection import GridSearchCV
 import pandas as pd
 import numpy as np
 
-def RFtune(depth, split, leaf, estimators, df, y, seed = 20, testsz = .1, feature = 9):
+def RFtune(depth = None, split = 2, leaf = 1, estimators = 100, df, y, seed = 20, testsz = .1, feature = 9):
     X_train, X_test, y_train, y_test = train_test_split(df, y, test_size=testsz, random_state=seed)
     paramF = dict(n_estimators = estimators, max_depth = depth,  
               min_samples_split = split, 
