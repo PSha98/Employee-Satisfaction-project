@@ -52,10 +52,10 @@ We are able to get a accuracy of around 76% and a f1 score of roughly 0.75 compa
 
 Also, checking the importance of the questions from our trained model, we noticed the following questions plays important roles, in other words, these questions are the main factors when an employee decides to leave:
 
-    - Q42 - Considering everything, how satisfied are you with your job?
-    - Q44 - Considering everything, how satisfied are you with your organization?
-    - Q23 - I recommend my organization as a good place to work.
-    - Q6  - My talents are used well in the workplace.
-    - Q3  - My work gives me a feeling of personal accomplishment.
+    1. Q42 - Considering everything, how satisfied are you with your job?
+    2. Q44 - Considering everything, how satisfied are you with your organization?
+    3. Q23 - I recommend my organization as a good place to work.
+    4. Q6  - My talents are used well in the workplace.
+    5. Q3  - My work gives me a feeling of personal accomplishment.
 
 ## Slides, KPI, conclusions?
