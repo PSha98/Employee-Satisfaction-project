@@ -44,6 +44,7 @@ For better guidance on training the model, we first check if it's possible to ex
 
 ## Results 
 Training with Random Forest with some paramters obtained from the previous section, we get the following prediction on the test data:
+
 ![alt text](https://github.com/PSha98/Employee-Satisfaction-project/blob/main/prediction.png)
 
 We are able to get a accuracy of around 76% and a f1 score of roughly 0.75 compared with a f1 score 0.48 when predicting everyone leaves. 
