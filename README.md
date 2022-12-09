@@ -43,6 +43,7 @@ For better guidance on training the model, we first check if it's possible to ex
 
 
 ## Results 
+
 Training with Random Forest with some paramters obtained from the previous section, we get the following prediction on the test data:
 
 ![alt text](https://github.com/PSha98/Employee-Satisfaction-project/blob/main/prediction.png)
