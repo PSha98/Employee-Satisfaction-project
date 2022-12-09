@@ -39,8 +39,24 @@ Since our data is completely categorical, we used box-plots (considering numeric
 We also used the nonparametric [Mann-Whitney U](https://en.wikipedia.org/wiki/Mann%E2%80%93Whitney_U_test) procedure to identify, given any two chosen agencies, whether there is enough statistical evidence to claim the median answers to each of the survey questions is different for these populations.
 
 Finally, we trained and run a random forest model on the survey data to predict, given an employee's answers to the survey (questions + demographic - intent to leave), whether the individual is planning to leave the organization within the next year.
+For better guidance on training the model, we first check if it's possible to extract important factors from the features using [Bartlett’s test of sphericity](https://en.wikipedia.org/wiki/Bartlett%27s_test) and [Kaiser-Meyer-Olkin Test](https://en.wikipedia.org/wiki/Kaiser%E2%80%93Meyer%E2%80%93Olkin_test). And use the number of factors to help train the model.
 
-## Results
+
+## Results 
+Training with Random Forest with some paramters obtained from the previous section, we get the following prediction on the test data:
+![alt text](https://github.com/PSha98/Employee-Satisfaction-project/blob/main/prediction.png)
+
+We are able to get a accuracy of around 76% and a f1 score of roughly 0.75 compared with a f1 score 0.48 when predicting everyone leaves. 
+
+Also, checking the importance of the questions from our trained model, we noticed the following questions plays important roles, in other words, these questions are the main factors when an employee decides to leave:
+
+    - Q42 - Considering everything, how satisfied are you with your job?
+    - Q44 - Considering everything, how satisfied are you with your organization?
+    - Q23 - I recommend my organization as a good place to work.
+    - Q6  - My talents are used well in the workplace.
+    - Q3  - My work gives me a feeling of personal accomplishment.
+
+ 
 
 
 ## Slides, KPI, conclusions?
