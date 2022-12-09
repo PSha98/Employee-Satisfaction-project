@@ -10,9 +10,12 @@ from sklearn.metrics import accuracy_score, classification_report
 from sklearn.model_selection import GridSearchCV
 import pandas as pd
 import numpy as np
+import math
 
-def RFtune(df, y, depth = None, split = 2, leaf = 1, estimators = 100, seed = 20, testsz = .1, feature = 9):
+def RFtune(df, y, depth = None, split = 2, leaf = 1, estimators = 100, seed = 20, testsz = .1, feature = 0):
     X_train, X_test, y_train, y_test = train_test_split(df, y, test_size=testsz, random_state=seed)
+    if feature == 0:
+        feature = round(math.sqrt(len(df.keys())))
     paramF = dict(n_estimators = estimators, max_depth = depth,  
               min_samples_split = split, 
              min_samples_leaf = leaf)
