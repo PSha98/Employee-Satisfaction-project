@@ -57,6 +57,4 @@ Also, checking the importance of the questions from our trained model, we notice
     - Q6  - My talents are used well in the workplace.
     - Q3  - My work gives me a feeling of personal accomplishment.
 
-
-
 ## Slides, KPI, conclusions?
